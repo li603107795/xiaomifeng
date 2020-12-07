@@ -25,45 +25,25 @@ $('.gotop').hover(function () {
         $(this).css('background',  'url(../images/gotop.png) no-repeat -42px  #666666')
     }
 )
-console.log($('.content div.item_wrap .imgtop'))
+// console.log($('.content div.item_wrap .imgtop'))
 
-// $('.content div.item_wrap').mouseenter('on', '.abc', function () {
-//     console.log(123)
-//     $(this).find('.imgtop').stop().animate({
-//         opacity:0
-//       }, 200, 'linear', () =>{ } )
-//     $(this).find('.imgbottom').stop().animate({
-//         opacity:1,
-//         zoom: 1.25,
-//       }, 200, 'linear', () => {} )
-// })
+$('.content div.item_wrap').on('mouseenter', 'a.abc', function () {
+    console.log(123)
+    $(this).find('.imgtop').stop().animate({
+        opacity:0
+      }, 200, 'linear', () =>{ } )
+    $(this).find('.imgbottom').stop().animate({
+        opacity:1,
+        zoom: 1.25,
+      }, 200, 'linear', () => {} )
+})
 
-// $('content div.item_wrap').mouseleave('on', 'a', function () {
-//     $(this).find('.imgtop').stop().animate({
-//         opacity:1
-//       }, 200, 'linear', () =>{ } )
-//     $(this).find('.imgbottom').stop().animate({
-//         opacity:0,
-//         zoom: 1,
-//       }, 200, 'linear', () => {} )
-// })
-
-
-// $('.item_wrap a').mouseenter(function () {
-//     $(this).find('.imgtop').stop().animate({
-//         opacity:0
-//       }, 200, 'linear', () =>{ } )
-//     $(this).find('.imgbottom').stop().animate({
-//         opacity:1,
-//         zoom: 1.25,
-//       }, 200, 'linear', () => {} )
-// })
-// $('.item_wrap a').mouseleave(function () {
-//     $(this).find('.imgtop').stop().animate({
-//         opacity:1
-//       }, 200, 'linear', () =>{ } )
-//     $(this).find('.imgbottom').stop().animate({
-//         opacity:0,
-//         zoom: 1,
-//       }, 200, 'linear', () => {} )
-// })
+$('.content div.item_wrap').on('mouseleave', 'a.abc', function () {
+    $(this).find('.imgtop').stop().animate({
+        opacity:1
+      }, 200, 'linear', () =>{ } )
+    $(this).find('.imgbottom').stop().animate({
+        opacity:0,
+        zoom: 1,
+      }, 200, 'linear', () => {} )
+})

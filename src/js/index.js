@@ -60,10 +60,6 @@ $(function (){
 
     })
 
-
-
-
-
     
 
     let str2 = ''
@@ -81,8 +77,8 @@ $(function (){
 
     // console.log(kafei)
 
+    
   }
-
-
+  
 
 })
