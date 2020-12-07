@@ -1,0 +1,208 @@
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,input,button,p,span,figure{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input,button{
+	border: 0;
+	outline: none;
+}
+li{
+	list-style:none;
+}
+img{
+	vertical-align: top;
+	border: 0;
+}
+h1,h2,h3,h4,h5,h6,ul,li,span,b,i,p{
+	line-height: 1;
+}
+i,b{
+	font-style: normal;
+}
+.center{
+	width: 1162px;
+	margin: 0 auto;
+}
+
+/* 头部样式 */
+.head1{
+	height: 70px;
+	width: 100%;
+	border-bottom:1px solid #e7e7e7 ;
+	color: #3C2314;
+	position: fixed;
+	z-index: 999;
+}
+.head{
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.head ul{
+	width: 650px;
+	height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.head ul>li{
+	flex:1;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+}
+.head ul>li a{
+	color: #3C2314;
+}
+.head a:hover{
+	color: #C8B49B;
+}
+
+.head ul>li a.active{
+	color: #C8B49B;
+}
+.head .login span{
+	cursor: pointer;
+}
+.head .login span a{
+	color: #3C2314;
+}
+.head .login span a:hover{
+	color: #C8B49B;
+}
+.head .login .shu{
+	margin: 0px 10px;
+}
+.head .cart{
+	display: flex;
+	height: 70px;
+	align-items: center;
+	position: relative;
+}
+.head .cart i{
+	cursor: pointer;
+}
+.head .cart span{
+	margin-left: 5px;
+	width: 16px;
+	height: 16px;
+	background-color: #3C2314;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	line-height: 16px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.head .cart .cartbox{
+	width: 420px;
+	height: 240px;
+	position: absolute;
+	box-shadow: 0 2px 10px 0 #777;
+	border: 1px solid #e7e7e7;
+	z-index: 11111;
+	background-color: #fff;
+	right: 0;
+	top: 60px;
+}
+.head .cart div.active{
+	display: none;
+}
+.head .cart .cartbox .cartboxlist{
+	padding: 15px;
+	height: 170px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.head .cart .cartbox .gocart{
+	position: relative;
+}
+.head .cart .cartbox .gocart a{
+	position: absolute;
+	width: 118px;
+	height: 42px;
+	background-color: #3C2314;
+	color: #FBF5DD;
+	line-height: 42px;
+	right: 25px;
+	top: 15px;
+	text-align: center;
+}
+
+
+/* 底部 */
+.footer{
+	width: 100%;
+	margin-top: 252px;
+	height: 280px;
+	background: url(../images/footer.png) center repeat-x;
+}
+.footer_wrap{
+	height: 280px;
+}
+.footer_nav{
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer_nav ul{
+	width: 900px;
+	height: 69px;
+	display: flex;
+	background: url(../images/footer_log.png) bottom left no-repeat;
+	padding-left: 131px;
+	align-items:flex-end ;
+}
+.footer_nav ul li{
+	flex: 1;
+	font-size: 14px;
+	text-align: center;
+	background: url(../images/footer_point.png) no-repeat right center;
+}
+.footer_nav ul li a{
+	color: #AA8764;
+}
+.footer_nav ul li:last-child{
+	background: 0;
+}
+
+.footer .nav_text{
+	color: #9B9B9B;
+	text-align: center;
+	font-size: 12px;
+}
+.footer_nav .wx{
+	text-align: center;
+}
+.footer_text p{
+	text-align: center;
+	font-size: 12px;
+	line-height: 24px;
+	color: #9B9B9B;
+	margin-top: 30px;
+}
+/* 返回顶部按钮 */
+.gotop{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	/* border: 1px solid black; */
+	z-index: 10;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	background: url(../images/gotop.png) no-repeat -42px  #666666;
+	display: none;
+}
+
+
+

@@ -27,9 +27,10 @@ const jsHandler = () => {
     // 3-1. 找到 js 文件
     return gulp
       .src('./src/js/*.js')
-      .pipe(babel({ presets: ['@babel/env'] })) // ES6 转码
+      // .pipe(babel({ presets: ['@babel/env'] })) // ES6 转码
       // .pipe(uglify()) // 压缩
       .pipe(gulp.dest('./dist/js/')) // 保存
+      
 }
 
 const htmlHandler = () => {
@@ -80,12 +81,8 @@ const webHandler = () => {
         livereload: true, // 自动刷新
         proxies: [
           {
-            source: '/list',
-            target: 'http://localhost:80/list.php'
-          },
-          {
-            source: '/info',
-            target: 'http://localhost:80/info.php'
+            source: '/ald',
+            target: 'http://localhost:80/lgm/'
           }
         ]
       }))
