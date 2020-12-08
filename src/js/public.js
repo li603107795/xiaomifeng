@@ -91,7 +91,7 @@ const nickname = getCookie('nickname')
 
 if(nickname){
     $('.login').addClass('hide')
-    $('.users').removeCLass('hide').text(`您好:${nickname}`)
+    $('.users').removeClass('hide').text(`您好:${nickname}`)
 
 
 

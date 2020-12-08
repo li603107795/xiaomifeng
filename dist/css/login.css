@@ -1,8 +1,14 @@
 div.container {
+  position: relative;
   height: 450px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+div.container .login_error {
+  color: red;
+  position: absolute;
+  bottom: 5px;
 }
 div.container form {
   border: 1px solid black;
@@ -10,15 +16,33 @@ div.container form {
   height: 350px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 30px;
 }
+div.container form label.error {
+  color: red;
+  position: absolute;
+}
 div.container form label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 40px;
   margin-bottom: 50px;
 }
 div.container form label input {
   border: 1px solid black;
+  width: 350px;
   height: 35px;
+  margin-left: 10px;
+  padding-left: 15px;
+}
+div.container form button {
+  width: 382px;
+  height: 39px;
+  background-color: #3C2314;
+  color: #FBF5DD;
 }
 
 /*# sourceMappingURL=login.css.map */
