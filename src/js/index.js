@@ -46,7 +46,7 @@ $(function (){
     renqi.forEach(item => {
       str1 += `
       <li>
-        <a class="abc" href="./detail.html">
+        <a class="abc" data-id="${ item.id }" href="" onclick="return false;">
             <div class="item_info">
                 <h3>${item.goods_name}</h3>
                 <h4>￥${item.goods_price}</h4>
@@ -71,7 +71,7 @@ $(function (){
     party.forEach(item => {
       str2 += `
       <li>
-        <a class="abc" href="./detail.html">
+        <a class="abc" data-id="${ item.id }" href="" onclick="return false;">
             <div class="item_info">
                 <h3>${item.goods_name}</h3>
                 <h4>￥${item.goods_price}</h4>
@@ -98,7 +98,7 @@ $(function (){
     kafei.forEach(item => {
       str3 += `
       <li>
-        <a class="abc" href="./detail.html">
+        <a class="abc" href="" onclick="return false;">
             <div class="item_info">
                 <h3>${item.goods_name}</h3>
                 <h4>￥${item.goods_price}</h4>
@@ -113,7 +113,21 @@ $(function (){
     })
     
   }
+
   
+      // 9. 点击跳转到详情页
+      $('.content div.item_wrap').on('click', 'a.abc', function () {
+        // 9-2. 拿到 标签身上记录的商品 id
+        console.log(123)
+        const id = $(this).data('id')
+        // 9-3. 把这个 id 存储到 cookie 中
+        setCookie('id', id)
+        // 9-4. 进行页面跳转
+        window.location.href = './detail.html'
+    })
+
+
+
 
   
 
