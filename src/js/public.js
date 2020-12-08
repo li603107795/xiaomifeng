@@ -91,11 +91,16 @@ const nickname = getCookie('nickname')
 
 if(nickname){
     $('.login').addClass('hide')
-    $('.users').removeClass('hide').text(`您好:${nickname}`)
-
-
-
-}else{
+    $('.users').removeClass('hide').html(`您好:${nickname} <button style="color:red;">退出</button>`)
+    
+    $('.users').on('click', 'button', function() {
+      delCookie('nickname')
+      window.location.reload()
+    })
+  }else{
     $('.login').removeClass('hide')
     $('.users').addClass('hide')
-}
+  }
+
+
+  
