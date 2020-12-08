@@ -41,7 +41,7 @@ $(function (){
     const renqi =  goodsList.list.filter(item => {
       return item.goods_title == list_info.renqi
     })
-    console.log(renqi)
+    // console.log(renqi)
     
     renqi.forEach(item => {
       str1 += `
@@ -68,6 +68,24 @@ $(function (){
     })
 
     // console.log(party)
+    party.forEach(item => {
+      str2 += `
+      <li>
+        <a class="abc" href="./detail.html">
+            <div class="item_info">
+                <h3>${item.goods_name}</h3>
+                <h4>￥${item.goods_price}</h4>
+            </div>
+            <div class="imgbox imgtop"><img src=${item.goods_imgtop} alt=""></div>
+            <div class="imgbox imgbottom"><img src=${item.goods_imgbottom} alt=""></div>
+        </a>
+      </li>
+      `
+      $('.birthday div.item_wrap ul').html(str2)
+
+    })
+
+
 
 
     let str3 = ''
@@ -77,8 +95,26 @@ $(function (){
 
     // console.log(kafei)
 
+    kafei.forEach(item => {
+      str3 += `
+      <li>
+        <a class="abc" href="./detail.html">
+            <div class="item_info">
+                <h3>${item.goods_name}</h3>
+                <h4>￥${item.goods_price}</h4>
+            </div>
+            <div class="imgbox imgtop"><img src=${item.goods_imgtop} alt=""></div>
+            <div class="imgbox imgbottom"><img src=${item.goods_imgbottom} alt=""></div>
+        </a>
+      </li>
+      `
+      $('.kf div.item_wrap ul').html(str3)
+
+    })
     
   }
+  
+
   
 
 })
