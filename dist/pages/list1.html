@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>小蜜蜂蛋糕店</title>
     <script src="../assets/polyfill/polyfill.js"></script>
-
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/swiper/css/swiper.css">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/public1.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/list.css">
     
 </head>
 <body>
@@ -19,9 +18,9 @@
         <div class="head center">
             <div class="log"><img src="../images/logo.png" alt=""></div>
             <ul>
-                <li><a href="./index.html" class="active">首页</a></li>
+                <li><a href="./index.html">首页</a></li>
                 <li><a href="./list.html">蛋糕</a></li>
-                <li><a href="./list.html">下午茶</a></li>
+                <li><a href="./list1.html" class="active">下午茶</a></li>
                 <li><a href="./food.html">精选食材</a></li>
                 <li><a href="./active.html">最新活动</a></li>
             </ul>
@@ -44,28 +43,44 @@
 
 
 
-    <!-- 轮播图 -->
-    <div class="banner">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../images/banner1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="../images/banner2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="../images/banner3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="../images/banner4.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="../images/banner5.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="../images/banner6.jpg" alt=""></div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
+    <!-- 一级分类 -->
+    <div class="info filterinfo container center">
+        <div class="panel panel-success">
+          <div class="panel-heading">筛选信息</div>
+          <div class="panel-body">
+            <ul>
+              <li class="cateOneBox">
+                <div class="left">分类</div>
+                <div class="right">
+                    <span>生日</span>
+                    <span>蛋糕</span>
+                </div>
+              </li>
+              <li>
+                <div class="left">排序方式</div>
+                <div class="right sortBox">
+                  <span data-method="价格" data-type="DESC" class="active desc">价格</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div>
+
+
+        <!-- 分页信息 -->
+      <div class="info pagiInfo container">
+        <div class="panel panel-warning">
+          <div class="panel-heading">分页信息</div>
+          <div class="panel-body pagination m-style">
+    
+          </div>
+        </div>
+      </div>
+
     <!-- 内容 -->
 
     <div class="content center ren">
-        <h2>
-            <span>人气推荐</span>
-            <a href="./list.html">更多</a>
-        </h2>
         <div class="item_wrap">
             <ul>
                 <li>
@@ -82,48 +97,8 @@
         </div>
     </div>
 
-    <div class="content center birthday">
-        <h2>
-            <span>庆生蛋糕</span>
-            <a href="./list.html">更多</a>
-        </h2>
-        <div class="item_wrap">
-            <ul>
-                <li>
-                    <a href="./detail.html">
-                        <div class="item_info">
-                            <h3>樱桃芝士蛋糕</h3>
-                            <h4>￥265</h4>
-                        </div>
-                        <div class="imgbox imgtop"><img src="http://images.ebeecake.com/img_w/3489.jpg" alt=""></div>
-                        <div class="imgbox imgbottom"><img src="http://images.ebeecake.com/img_w/3523.jpg" alt=""></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 
-    <div class="content center kf">
-        <h2>
-            <span>咖啡下午茶</span>
-            <a href="./list.html">更多</a>
-        </h2>
-        <div class="item_wrap">
-            <ul>
-                <li>
-                    <a href="./detail.html">
-                        <div class="item_info">
-                            <h3>樱桃芝士蛋糕</h3>
-                            <h4>￥265</h4>
-                        </div>
-                        <div class="imgbox imgtop"><img src="http://images.ebeecake.com/img_w/3489.jpg" alt=""></div>
-                        <div class="imgbox imgbottom"><img src="http://images.ebeecake.com/img_w/3523.jpg" alt=""></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 
     <!-- 底部 -->
@@ -162,8 +137,8 @@
 
     <script src="../assets/jquery/jquery.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.js"></script>
-    <script src="../assets/swiper/js/swiper.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../assets/jquery-pagination/jquery.paginatuon.js"></script>
     <script src="../js/public.js"></script>
+    <script src="../js/list.js"></script>
 </body>
 </html>

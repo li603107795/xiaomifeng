@@ -21,13 +21,13 @@
         padding-top: 7px;
         ul{
             width: 100%;
-            height: 336px;
             display: flex;
             justify-content: flex-start;
+            flex-wrap: wrap;
             li{
+                margin-bottom: 70px;
                 width: 25%;
                 height: 280px;
-                padding: 28px 7px;
                 box-sizing: content-box;
                 a{
                     position: relative;
