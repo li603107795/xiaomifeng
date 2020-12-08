@@ -27,8 +27,8 @@ const jsHandler = () => {
     // 3-1. 找到 js 文件
     return gulp
       .src('./src/js/*.js')
-      // .pipe(babel({ presets: ['@babel/env'] })) // ES6 转码
-      // .pipe(uglify()) // 压缩
+      .pipe(babel({ presets: ['@babel/env'] })) // ES6 转码
+      .pipe(uglify()) // 压缩
       .pipe(gulp.dest('./dist/js/')) // 保存
       
 }
