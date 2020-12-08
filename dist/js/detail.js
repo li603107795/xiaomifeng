@@ -1,0 +1,1 @@
+"use strict";$(function(){var o=new Swiper(".swiper-container",{loop:!0,autoplay:{delay:3e3},pagination:{el:".swiper-pagination",clickable:!0}}),e=document.querySelector(".swiper-container");e.onmouseover=function(){o.autoplay.stop()},e.onmouseout=function(){o.autoplay.start()}});

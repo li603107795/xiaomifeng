@@ -1,0 +1,78 @@
+div.detail {
+  height: 700px;
+  margin-top: 90px;
+  position: relative;
+  display: flex; }
+  div.detail div.banner {
+    flex: 1; }
+    div.detail div.banner .swiper-container {
+      width: 710px;
+      height: 698px; }
+      div.detail div.banner .swiper-container div.one {
+        background-image: url("http://images.ebeecake.com/img_w/3593.jpg"); }
+      div.detail div.banner .swiper-container div.two {
+        background-image: url("http://images.ebeecake.com/img_w/3594.jpg"); }
+      div.detail div.banner .swiper-container div.three {
+        background-image: url("http://images.ebeecake.com/img_w/3595.jpg"); }
+      div.detail div.banner .swiper-container div {
+        background-position: -280px center; }
+  div.detail div.detail_info {
+    width: 450px;
+    border: 1px solid #e7e7e7;
+    padding: 20px; }
+    div.detail div.detail_info h1 {
+      font-size: 28px;
+      line-height: 28px;
+      font-weight: 400;
+      margin-top: 50px; }
+    div.detail div.detail_info h2 {
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 400;
+      margin-top: 100px;
+      padding-right: 150px; }
+    div.detail div.detail_info div.goods_size {
+      display: flex; }
+      div.detail div.detail_info div.goods_size div.size_img {
+        background-color: #fafafb; }
+      div.detail div.detail_info div.goods_size div.size_info .size_time {
+        height: 30px;
+        line-height: 30px;
+        padding-left: 30px;
+        background-position: center center; }
+      div.detail div.detail_info div.goods_size div.size_info .size_price {
+        font-size: 30px; }
+    div.detail div.detail_info .select_box {
+      margin: 20px 26px; }
+      div.detail div.detail_info .select_box ul {
+        display: flex;
+        width: 100%; }
+        div.detail div.detail_info .select_box ul li {
+          margin-left: 30px;
+          width: 80px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          padding: 0 10px;
+          border: 1px solid #3C2314;
+          background: url(https://images.ebeecake.com/img_c/size/selected.png) bottom right no-repeat; }
+          div.detail div.detail_info .select_box ul li i.active {
+            color: chocolate; }
+  div.detail .addCartBox {
+    margin: 60px 26px 0 26px;
+    display: flex; }
+    div.detail .addCartBox .addCart {
+      width: 170px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      background-color: #3C2314;
+      color: #FBF5DD;
+      margin-right: 20px; }
+    div.detail .addCartBox .buy {
+      width: 170px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid #E9E9E9;
+      line-height: 40px;
+      color: #3C2314; }
