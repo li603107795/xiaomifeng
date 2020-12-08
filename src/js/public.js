@@ -7,8 +7,10 @@ $(window).scroll(function () {
     let scrolltop = $(this).scrollTop()
     if(scrolltop) {
         $('.gotop').css('display', 'block')
+        $('.head').css('box-shadow', '0 0 10px -3px #6e6e6e')
     }else{
         $('.gotop').css('display', 'none')
+        $('.head').css('box-shadow', '')
     }
 })
 const gotop = document.querySelector('.gotop')
