@@ -7,10 +7,10 @@ $(window).scroll(function () {
     let scrolltop = $(this).scrollTop()
     if(scrolltop) {
         $('.gotop').css('display', 'block')
-        $('.head').css('box-shadow', '0 0 10px -3px #6e6e6e')
+        $('.head1').css('box-shadow', '0 0 10px -3px #6e6e6e')
     }else{
         $('.gotop').css('display', 'none')
-        $('.head').css('box-shadow', '')
+        $('.head1').css('box-shadow', '')
     }
 })
 const gotop = document.querySelector('.gotop')
@@ -91,14 +91,16 @@ const nickname = getCookie('nickname')
 
 if(nickname){
     $('.login').addClass('hide')
-    $('.users').removeCLass('hide').text(`您好:${nickname} <button style="color:red;">退出</button>`)
+    $('.users').removeClass('hide').html(`您好:${nickname} <button style="color:red;">退出</button>`)
+    
     $('.users').on('click', 'button', function() {
       delCookie('nickname')
       window.location.reload()
     })
-
-
-}else{
+  }else{
     $('.login').removeClass('hide')
     $('.users').addClass('hide')
-}
+  }
+
+
+  
