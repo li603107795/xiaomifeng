@@ -1,0 +1,22 @@
+div.container{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    form{
+        border: 1px solid black;
+        width: 500px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        label{
+            height: 40px;
+            margin-bottom: 50px;
+            input{
+                border: 1px solid black;
+                height: 35px;
+            }
+        }
+    }
+}
