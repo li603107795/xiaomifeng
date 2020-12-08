@@ -38,6 +38,8 @@ i,b{
 	color: #3C2314;
 	position: fixed;
 	z-index: 999;
+	top: 0;
+	background-color: #fff;
 }
 .head{
 	height: 70px;
