@@ -12,7 +12,7 @@ const sassHandler = () => {
     return gulp
       .src('./src/sass/*.scss')
       .pipe(sass()) // 转码
-    //   .pipe(cssmin()) // 压缩
+      .pipe(cssmin()) // 压缩
       .pipe(gulp.dest('./dist/sass/')) // 存放到指定目录
 }
 
