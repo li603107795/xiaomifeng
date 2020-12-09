@@ -40,6 +40,16 @@ div.detail {
         line-height: 30px;
         padding-left: 30px;
         background-position: center center; }
+      div.detail div.detail_info div.goods_size div.size_info .size_canju {
+        height: 30px;
+        line-height: 30px;
+        padding-left: 30px;
+        background-position: center center; }
+      div.detail div.detail_info div.goods_size div.size_info .size_renshu {
+        height: 30px;
+        line-height: 30px;
+        padding-left: 30px;
+        background-position: center center; }
       div.detail div.detail_info div.goods_size div.size_info .size_price {
         font-size: 30px; }
     div.detail div.detail_info .select_box {
@@ -48,6 +58,7 @@ div.detail {
         display: flex;
         width: 100%; }
         div.detail div.detail_info .select_box ul li {
+          cursor: pointer;
           margin-left: 30px;
           width: 80px;
           height: 30px;
@@ -55,24 +66,27 @@ div.detail {
           text-align: center;
           padding: 0 10px;
           border: 1px solid #3C2314;
-          background: url(https://images.ebeecake.com/img_c/size/selected.png) bottom right no-repeat; }
-          div.detail div.detail_info .select_box ul li i.active {
-            color: chocolate; }
-  div.detail .addCartBox {
-    margin: 60px 26px 0 26px;
-    display: flex; }
-    div.detail .addCartBox .addCart {
-      width: 170px;
-      height: 40px;
-      text-align: center;
-      line-height: 40px;
-      background-color: #3C2314;
-      color: #FBF5DD;
-      margin-right: 20px; }
-    div.detail .addCartBox .buy {
-      width: 170px;
-      height: 40px;
-      text-align: center;
-      border: 1px solid #E9E9E9;
-      line-height: 40px;
-      color: #3C2314; }
+          background: url("https://images.ebeecake.com/img_c/size/selected.png") bottom right no-repeat; }
+        div.detail div.detail_info .select_box ul li.active {
+          color: #fff;
+          background-color: chocolate; }
+    div.detail div.detail_info .addCartBox {
+      margin: 60px 26px 0 26px;
+      display: flex; }
+      div.detail div.detail_info .addCartBox button {
+        cursor: pointer; }
+      div.detail div.detail_info .addCartBox .addCart {
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #3C2314;
+        color: #FBF5DD;
+        margin-right: 20px; }
+      div.detail div.detail_info .addCartBox .buy {
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #E9E9E9;
+        line-height: 40px;
+        color: #3C2314; }

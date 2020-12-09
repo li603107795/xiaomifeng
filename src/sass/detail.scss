@@ -51,6 +51,18 @@ div.detail{
                     padding-left: 30px;
                     background-position: center center ;
                 }
+                .size_canju{
+                    height: 30px;
+                    line-height: 30px;
+                    padding-left: 30px;
+                    background-position: center center ;
+                }
+                .size_renshu{
+                    height: 30px;
+                    line-height: 30px;
+                    padding-left: 30px;
+                    background-position: center center ;
+                }
                 .size_price{
                     font-size: 30px;
                 }
@@ -61,7 +73,8 @@ div.detail{
             ul{
                 display: flex;
                 width: 100%;
-                li{
+                li {
+                    cursor: pointer;
                     margin-left: 30px;
                     width: 80px;
                     height: 30px;
@@ -69,18 +82,21 @@ div.detail{
                     text-align: center;
                     padding: 0 10px;
                     border: 1px solid #3C2314;
-                    background: url(https://images.ebeecake.com/img_c/size/selected.png) bottom right no-repeat;
-                    i.active{
-                        color: chocolate;
-                        }
-                    }
-
+                    background: url('https://images.ebeecake.com/img_c/size/selected.png') bottom right no-repeat;
                 }
+                li.active{
+                    color: #fff;
+                    background-color: chocolate;
+                }   
             }
         }
+    
         .addCartBox{
             margin: 60px 26px 0 26px;
             display: flex;
+            button{
+                cursor: pointer;
+            }
             .addCart{
                 width: 170px;
                 height: 40px;
@@ -101,5 +117,5 @@ div.detail{
 
 
         }
+    }
 }
-
