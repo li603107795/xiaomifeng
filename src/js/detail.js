@@ -82,10 +82,10 @@ $(function () {
         </div>
         <div class="select_box">
             <ul class="sizelist">
-                <li class="default active" data-id="${size.daxiao}">
+                <li class="default active" data-price="${ info.goods_price }" data-id="${size.daxiao}">
                     <i>${size.daxiao}厘米</i>
                 </li>
-                <li class="default" data-id="${size2.daxiao}">
+                <li class="default" data-price="${ size2.price }" data-id="${size2.daxiao}">
                     <i>${size2.daxiao}厘米</i>
                 </li>
             </ul>
@@ -103,8 +103,8 @@ $(function () {
                 $('.detail_info').find('div.size_img').html(`<img src=${info.goods_size1} alt="">`)
                 $('.detail_info').find('div.size_canju').text(`${size.canju}`)
                 $('.detail_info').find('div.size_renshu').text(`${size.renshu}`)
-                $('.detail_info').find('div.size_price').html(`￥${info.goods_price}/<span style="font-size:13px;">${size.daxiao}cm</span>`)
-                $('.detail_info').find('button.addCart').attr('data-price', `${info.goods_price}`)
+                $('.detail_info').find('div.size_price').html(`￥${$(this).data('price')}/<span style="font-size:13px;">${size.daxiao}cm</span>`)
+                $('.detail_info').find('button.addCart').attr('data-price', `${$(this).data('price')}`)
             }
             if(type == 20){
                 $('.detail_info').find('div.size_img').html(`<img src=${info.goods_size2} alt="">`)
@@ -131,19 +131,36 @@ $(function () {
             return item.id == id && item.goods_price == price 
         })
 
-        if(flag){
+        if (flag) {
             const cart_goods = cart.filter((item) => {
                 return item.id == id && item.goods_price == price
             })[0]
-            cart_goods.cart_number = cart_goods.cart_number - 0 + 1
-        }else if(info.goods_price == size2.price){
-            info.goods_price = size2.price
+            cart_goods.cart_number -= 0
+            cart_goods.cart_number += 1
+        } else {
             info.cart_number = 1
-            cart.push(info)
-        }else{
-            info.cart_number = 1
+            info.goods_price = price
             cart.push(info)
         }
+
+        // if(flag){
+        //     const cart_goods = cart.filter((item) => {
+        //         return item.id == id && item.goods_price == price
+        //     })[0]
+        //     console.log(1)
+        //     cart_goods.cart_number = cart_goods.cart_number - 0 + 1
+        // }else if(info.goods_price == size2.price){
+        //     info.goods_price = size2.price
+        //     info.cart_number = 1
+        //     cart.push(info)
+        //     console.log(2)
+
+        // }else{
+        //     info.cart_number = 1
+        //     cart.push(info)
+        //     console.log(3)
+
+        // }
 
 
         window.localStorage.setItem('cart', JSON.stringify(cart))
