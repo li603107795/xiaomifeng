@@ -98,7 +98,7 @@ $(function (){
     kafei.forEach(item => {
       str3 += `
       <li>
-        <a class="abc" href="" onclick="return false;">
+        <a class="abc" data-id="${ item.id }" href="" onclick="return false;">
             <div class="item_info">
                 <h3>${item.goods_name}</h3>
                 <h4>￥${item.goods_price}</h4>
