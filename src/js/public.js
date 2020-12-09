@@ -1,5 +1,5 @@
 $('.cart').click(function () {
-    $(this).find('.cartbox').toggleClass('active')
+    window.location.href = './cart.html'
 })
 
 
