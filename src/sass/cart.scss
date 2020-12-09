@@ -1,6 +1,8 @@
 $border:1px solid #E7E7E7;
 
-
+.goumai[disabled]{
+    cursor: not-allowed;
+}
 div.cartcontent{
     height: 700px;
     margin-top: 90px;

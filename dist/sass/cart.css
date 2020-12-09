@@ -1,3 +1,6 @@
+.goumai[disabled] {
+  cursor: not-allowed; }
+
 div.cartcontent {
   height: 700px;
   margin-top: 90px;
