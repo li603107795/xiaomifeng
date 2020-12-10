@@ -155,28 +155,28 @@ $(function () {
     })
 
         // 数量++
-        $('.on').on('click', '.jia',function (){
-            const price = $(this).data('price')
-            console.log(price)
-            const info = cart.filter(item => item.goods_price == price)[0]
-            info.cart_number = info.cart_number - 0 + 1
-            bindHtml()
-            window.localStorage.setItem('cart', JSON.stringify(cart))
-        })
+    $('.on').on('click', '.jia',function (){
+        const price = $(this).data('price')
+        console.log(price)
+        const info = cart.filter(item => item.goods_price == price)[0]
+        info.cart_number = info.cart_number - 0 + 1
+        bindHtml()
+        window.localStorage.setItem('cart', JSON.stringify(cart))
+    })
 
-        $('.on').on('click', '.del', function () {
-            const price = $(this).data('price')
-            for (let i = 0; i < cart.length; i++) {
-                if( cart[i].goods_price == price){
-                    cart.splice(i, 1)
-                    // i--
-                    break
-                }
+    $('.on').on('click', '.del', function () {
+        const price = $(this).data('price')
+        for (let i = 0; i < cart.length; i++) {
+            if( cart[i].goods_price == price){
+                cart.splice(i, 1)
+                // i--
+                break
             }
-            bindHtml()
-            window.localStorage.setItem('cart', JSON.stringify(cart))
-            if(!cart.length) return window.location.reload()
-        })
+        }
+        bindHtml()
+        window.localStorage.setItem('cart', JSON.stringify(cart))
+        if(!cart.length) return window.location.reload()
+    })
     
 
 

@@ -127,8 +127,11 @@ $(function (){
     })
 
 
+    $('li.food').click(function (e){
+      $(this).find('ol').toggleClass('hide')
+    })
 
-
+    $('ol').click(e => e.stopPropagation())
   
 
 })

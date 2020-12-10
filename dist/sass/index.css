@@ -1,1 +1,1 @@
-.head1{border-bottom-color:transparent;position:static}.swiper-pagination-bullet{width:30px;height:30px;line-height:30px;text-align:center}
+.head1{border-bottom-color:transparent;position:static}.head1 li.food{position:relative}.head1 li.food ol{width:100px;left:15px;position:absolute;z-index:99999}.head1 li.food ol li{margin-top:10px}.head1 li.food ol>li:hover{background-color:khaki;color:#7cfc00}.swiper-pagination-bullet{width:30px;height:30px;line-height:30px;text-align:center}

@@ -1,6 +1,22 @@
 .head1{
     border-bottom-color: transparent;
     position: static;
+    li.food{
+        position: relative;
+        ol{
+            width: 100px;
+            left: 15px;
+            position: absolute;
+            z-index: 99999;
+            li{
+                margin-top: 10px;
+            }
+        }
+        ol>li:hover{
+            background-color: khaki;
+            color: lawngreen;
+        }
+    }
 }
 .swiper-pagination-bullet{
     width: 30px;
